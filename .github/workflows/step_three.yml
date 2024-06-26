@@ -9,6 +9,7 @@ on:
 
 jobs: 
   run:
+    runs-on: ubuntu-latest
     steps:
       - name: do the thing
         run: exit 0
