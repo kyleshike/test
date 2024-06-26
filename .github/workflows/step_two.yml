@@ -1,0 +1,14 @@
+name: Step two
+
+on:
+  workflow_run:
+    workflows: [Step one]
+    types: 
+      - requested
+      - completed
+
+jobs: 
+  run:
+    steps:
+      - name: do the thing
+        run: exit 0
